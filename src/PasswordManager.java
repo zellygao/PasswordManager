@@ -24,7 +24,12 @@ public class PasswordManager {
         Scanner scanner = new Scanner (new File (filename));
         while(scanner.hasNextLine()){
             String [] array = scanner.nextLine().split(",");
-            Entry entry = new Entry (array[0],array[1],array[2],array[3],getTime());
+
+            //for(String elem:array){
+               // System.out.println(elem);
+         //   }
+
+            Entry entry = new Entry (array[0],array[1],array[2],array[3], array[4]);
             entries.add(entry);
         }
     }
@@ -95,7 +100,6 @@ e.setUrl(url);
     }
     public void save() throws FileNotFoundException {
         PrintStream file = new PrintStream ("Data.txt");
-        //entries.println("Data.txt");
         for (Entry e : entries) {
             file.println(e.toString());
         }

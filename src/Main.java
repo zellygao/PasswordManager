@@ -70,24 +70,25 @@ public class Main {
     }
     public void updateEntry(Entry e){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What would you like to edit? Enter A for website, B for username, C for password, D for url ");{
-            if(scanner.next().equals("A"))     {
+        System.out.println("What would you like to edit? Enter A for website, B for username, C for password, D for url ");
+        String answer = scanner.nextLine();
+            if(answer.equals("A"))     {
                 System.out.println("Please enter the new website name:");
                 passwordManager.editWebsite(e,scanner.next());
             }
-            if(scanner.next().equals("B"))     {
+            if(answer.equals("B"))     {
                 System.out.println("Please enter the new username:");
                 passwordManager.editUsername(e,scanner.next());
             }
-            if(scanner.next().equals("C"))     {
+            if(answer.equals("C"))     {
                 System.out.println("Please enter the new password:");
                 passwordManager.editPassword(e,scanner.next());
             }
-            if(scanner.next().equals("D"))     {
+            if(answer.equals("D"))     {
                 System.out.println("Please enter the new url:");
                 passwordManager.editUrl(e,scanner.next());
             }
-        }
+
         System.out.println("Succesfullly edited!");
         System.out.println("Enter 1 to return to the homepage or 2 to search for another entry");
         while(!scanner.hasNextInt()){
@@ -118,6 +119,7 @@ public class Main {
             addEntry();
         } else if (result==3) {
             passwordManager.deleteEntry(e.getWebsite());
+            System.out.println("Entry successfully deleted!"); //
         } else if(result==4){
             updateEntry(e);
         }
@@ -125,7 +127,7 @@ public class Main {
 
     public void run(){
         try {
-            passwordManager = new PasswordManager("src/Data");
+            passwordManager = new PasswordManager("Data.txt");
         } catch (IOException e) {
             System.out.println("Data file not found.");
             return;
