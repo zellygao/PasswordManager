@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 public class PasswordManager {
 
     //make 1d array of entry objects
-    private ArrayList<Entry> entries ;
+    private ArrayList<Entry> entries;
     private String filename;
 
     public PasswordManager(String filename) throws FileNotFoundException {

@@ -127,7 +127,7 @@ public class Main {
 
     public void run(){
         try {
-            passwordManager = new PasswordManager("Data.txt");
+            passwordManager = new PasswordManager("src/Data.txt");
         } catch (IOException e) {
             System.out.println("Data file not found.");
             return;

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="919a3ecf-f0f8-437b-89cb-cdaf44650fed" name="Changes" comment="done">
-      <change afterPath="$PROJECT_DIR$/src/Data.txt" afterDir="false" />
+    <list default="true" id="919a3ecf-f0f8-437b-89cb-cdaf44650fed" name="Changes" comment="date working">
+      <change afterPath="$PROJECT_DIR$/src/Data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PasswordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasswordManager.java" afterDir="false" />
     </list>
@@ -92,11 +90,20 @@
       <option name="project" value="LOCAL" />
       <updated>1716869158833</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="date working">
+      <option name="closed" value="true" />
+      <created>1716956030692</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716956030693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="date working" />
+    <option name="LAST_COMMIT_MESSAGE" value="date working" />
   </component>
 </project>
